@@ -1,0 +1,59 @@
+<div class="input-field col s6">
+    <i class="material-icons prefix">important_devices</i>
+    <select name=servicio id="servicio" required>
+        <option value="" disabled selected>Seleccione el tipo de servicio</option>
+        <option value="Video Conferencia">Video Conferencia</option>
+        <option value="Video Streaming">Video Streaming</option>
+        <option value="Oficina Virtual">Oficina Virtual</option>
+        <option value="Capacitacion">Capacitacion</option>
+    </select>   
+    <label for="servicio">Tipo de servicio</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">place</i>    
+    <input id="lugarEv" type="text" maxlength="30" name="lugarEv" class="validate" required>
+    <label for="lugarEv">Escriba el lugar del Evento</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">account_balance</i>    
+    <input id="entidadDes" type="text" maxlength="30" name="entidadDes" class="validate" required>
+    <label for="entidadDes">Entidad Destino</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">email</i>
+    <input id="correoDes" type="email" maxlength="30" name="correoDes" class="validate" required>
+    <label for="correoDes">Correo Entidad Destino</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">date_range</i>
+    <input type="date" class="datepicker" id="fechaPru" name="fechaPr" required>                          
+    <label for="fechaPru">Fecha y Hora de Pruebas</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">hourglass_empty</i>    
+    <input type="time" id="horaPr" name="horaPr" required>
+</div>
+
+    <!--Desde la fecha de hoy y que el evento sea depues de la prueba-->  
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">date_range</i>
+    <input type="date" class="datepicker" id="fechaEve" name="fechaEv" required>                          
+    <label for="fechaEve">Fecha y Hora del Evento</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">hourglass_empty</i>
+    <input type="time" id="horaEv" name="horaEv" required>
+</div>
+
+<div class="input-field col s12">
+    <i class="material-icons prefix">comment</i>
+    <textarea id="observ" name="observ" class="materialize-textarea" maxlength="150" length="150"></textarea>
+    <label for="observ">Observaciones</label>
+</div>

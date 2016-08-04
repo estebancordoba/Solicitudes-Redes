@@ -1,0 +1,101 @@
+<div class="input-field col s6">    
+    <i class="material-icons prefix">supervisor_account</i>
+    <input id="nombFuncS" type="text" name="nombFuncS" maxlength="30" class="validate" required>
+    <label for="nombFuncS">Nombre del funcionario para quien se solicita el permiso</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">perm_identity</i>
+    <input id="cedFuncS" maxlength="15" type="text" name="cedFuncS" class="validate" required>
+    <label for="cedFuncS">Cedula del funcionario para quien se solicita el permiso</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">important_devices</i>
+    <select onchange="compTab();" name=tipoDisp id="tipoD" required>
+        <option value="" disabled selected>Seleccione el tipo de dipositivo</option>
+        <option value="Computador Portatil">Computador Portatil</option>
+        <option value="Tableta">Tableta</option>
+        <option value="Computador de Escritorio">Computador de Escritorio</option>
+    </select>   
+    <label for="tipoD">Tipo de dispositivo</label>
+</div>
+
+<div class="input-field col s6">
+    <i class="material-icons prefix">confirmation_number</i>
+    <input id="nui" type="text" maxlength="20" name="nui" class="validate" required>
+    <label for="nui">Escriba el NUI del equipo a registrar</label>
+</div>
+
+<div class="input-field col s12">
+    <i class="material-icons prefix">description</i>    
+    <input id="descEqu" type="text" maxlength="20" name="descEqu" maxlength="30" class="validate" required>
+    <label for="descEqu">Descripcion del equipo (Marca, Modelo, Color)</label>
+</div>
+
+<div class="input-field col s4"> 
+    <i class="material-icons prefix" id="tiC">perm_scan_wifi</i>   
+    <label for="tiC">Tipo de conexion: </label>
+</div>
+<div class="input-field col s4">
+    <input type="radio" id="conC" name="tipoCon" value="Cableada" checked>
+      <label for="conC">Cableada</label>
+</div>
+<div class="input-field col s4">
+    <input type="radio" id="conI" name="tipoCon" value="Inalambrica">
+      <label for="conI">Inalambrica</label>
+</div>
+
+<div class="input-field col s12"> </div>
+<div class="input-field col s6"> 
+    <i class="material-icons prefix" id="dirM">settings_ethernet</i>    
+    <label for="dirM">Dirección MAC del dispositivo: </label>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac1" maxlength="2" class="validate" required>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac2" maxlength="2" class="validate" required>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac3" maxlength="2" class="validate" required>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac4" maxlength="2" class="validate" required>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac5" maxlength="2" class="validate" required>
+</div>
+<div class="input-field col s1"> 
+    <input onfocus="ayudaMAC();" style="width: 20px; margin-left:10px; text-transform:uppercase;" type="text" name="mac6" maxlength="2" class="validate" required>
+</div>
+
+<div class="input-field col s12"> </div>
+<div class="input-field col s4"> 
+    <i class="material-icons prefix" id="dirIP">flip</i>    
+    <label for="dirIP">Dirección IP del dispositivo: </label>
+</div>
+<div class="input-field col s2"> 
+    <input onfocus="ayudaIP();" style="width: 46px; margin-left:10px;" type="number" name="ip1" maxlength="3" class="validate" min="0" max="255" required>
+</div>
+<div class="input-field col s2"> 
+    <input onfocus="ayudaIP();" style="width: 46px; margin-left:10px;" type="number" name="ip2" maxlength="3" class="validate" min="0" max="255" required>
+</div>
+<div class="input-field col s2"> 
+    <input onfocus="ayudaIP();" style="width: 46px; margin-left:10px;" type="number" name="ip3" maxlength="3" class="validate" min="0" max="255" min="0" max="255" required>
+</div>
+<div class="input-field col s2"> 
+    <input onfocus="ayudaIP();" style="width: 46px; margin-left:10px;" type="number" name="ip4" maxlength="3" class="validate" min="0" max="255" required>
+</div>
+ 
+<div class="input-field col s12">
+<i class="material-icons prefix">format_align_justify</i>
+    <textarea id="justifi" name="justifi" class="materialize-textarea" maxlength="150" length="150" required></textarea>
+    <label for="justifi">Justificacion del Permiso</label>
+</div>
+
+<div class="input-field col s12">
+    <i class="material-icons prefix">comment</i>
+    <textarea id="observ" name="observ" class="materialize-textarea" maxlength="150" length="150"></textarea>
+    <label for="observ">Observaciones</label>
+</div>  
